@@ -1,0 +1,149 @@
+/* Header dan Navbar */
+.container {
+    border-bottom: 5px solid #ff6b6b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.home, .contact {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.packages-container {
+    position: relative;
+}
+
+#packagesSelect {
+    padding: 4px;
+    font-size: 16px;
+    border: 2px solid #ff6b6b;
+    cursor: pointer;
+    background: white;
+}
+
+#packagesSelect:focus {
+    outline: none;
+    border-color: #ff4d4d;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(135deg, #ff6b6b, #ffa07a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px; /* Tambahkan margin agar tidak ketutupan navbar */
+}
+
+.content {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Slider */
+.slider {
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.img-slideshow {
+    width: 50%;
+    max-height: 500px;
+    object-fit: cover;
+    padding-bottom: 8px;
+}
+.slider button {
+    position: relative;
+    top: 50%;
+    max-width: fit-content;
+}
+/* Form Container */
+.form-container {
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form Input Groups */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #fff;
+}
+
+.input-box .icon {
+    margin-right: 8px;
+}
+
+.input-box input,
+.input-box select {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Error Messages */
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+/* Submit Button */
+button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ff5252;
+}

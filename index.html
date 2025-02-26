@@ -6,84 +6,124 @@
         <script defer src="js/script.js"></script>
     </head>
     <body>
+
+<!-- Home Section -->
     <nav class="container">
-        <img src="assets/logo.jpg" class="logo" width="80" height="80" />
+        <img src="assets/logo.png" class="logo" width="80" height="50" />
         <div class="home">Home</div>
-        <div class="packages-container">
-            <select id="packagesSelect">
-                <option selected disabled>Our Packages</option>
-                <option value="bali">Bali</option>
-                <option value="paris">Paris</option>
-                <option value="tokyo">Tokyo</option>
-                <option value="korea">Korea Selatan</option>
-            </select>
-        </div>
-        <div class="contact">Contact Us</div>
+        <div class="packages">Our Packages</div>
+        <div class="call">Call Us</div>
     </nav>
     <header class="hero">
         <div class="content">
-            <h1>Find Best Place to Travels</h1>
-            <p>Healing makes you happier</p>
+            <h1>Your Trusted Travel Agent's</h1>
+            <p>your happiness is our happiness</p>
         </div>
     </header>
     
-<!-- Home Section -->
-<!-- banner slide -->
- <section class="slider">
- <div>
+<!-- Main Section -->
+<div class="content-container">
+    <!-- Banner Slider -->
+    <div class="slider">
     <img class="img-slideshow" src="assets/bali2.jpg" />
     <img class="img-slideshow" src="assets/korea.jpg" />
     <img class="img-slideshow" src="assets/paris.jpg" />
     <img class="img-slideshow" src="assets/tokyo.jpg" />
+    <img class="img-slideshow" src="assets/swiss.jpeg" />
+    <img class="img-slideshow" src="assets/turki.jpg" />
     <button onclick="plusDivs(-1)">Previous</button>
     <button onclick="plusDivs(1)">Next</button>
  </div>
- </section>
-
-<!-- form section -->
-<aside id="home" class="banner">
-    <div class="form-container">
-        <h2>Book Your Trip</h2>
-        <form id="bookingForm">
-            <!-- Name -->
-            <div class="input-group">
-                <label for="name">Your Name</label>
-                <div class="input-box">
-                    <span class="icon">👤</span>
-                    <input type="text" id="name" placeholder="Enter your name" required>
-                </div>
-                <span class="error-message">Name cannot be blank</span>
+ <!-- Form Section -->
+<aside id="home" class="form-container">
+    <h2>Contact Us</h2>
+    <p>Sales akan menghubungi Anda 1x24 jam setelah data kami terima.</p>
+    <form id="bookingForm">
+        <!-- Name -->
+        <div class="input-group">
+            <label for="name">Your Name</label>
+            <div class="input-box">
+                <span class="icon">👤</span>
+                <input type="text" id="name" placeholder="Enter your name" required>
             </div>
+            <span class="error-message">Name cannot be blank</span>
+        </div>
 
-            <!-- Email -->
-            <div class="input-group">
-                <label for="email">Your Email</label>
-                <div class="input-box">
-                    <span class="icon">📧</span>
-                    <input type="email" id="email" placeholder="Enter your email" required>
-                </div>
-                <span class="error-message">Email cannot be blank</span>
+        <!-- Email -->
+        <div class="input-group">
+            <label for="email">Your Email</label>
+            <div class="input-box">
+                <span class="icon">📧</span>
+                <input type="email" id="email" placeholder="Enter your email" required>
             </div>
+            <span class="error-message">Email cannot be blank</span>
+        </div>
 
-            <!-- Destination -->
-            <div class="input-group">
-                <label for="destination">Select Destination</label>
-                <div class="input-box">
-                    <span class="icon">🌍</span>
-                    <select id="destination" required>
-                        <option value="">Choose Destination</option>
-                        <option value="Bali">Bali</option>
-                        <option value="Paris">Paris</option>
-                        <option value="Tokyo">Tokyo</option>
-                        <option value="Korea Selatan">Korea Selatan</option>
-                    </select>
-                </div>
-                <span class="error-message">Please select a destination</span>
+        <!-- Destination -->
+        <div class="input-group">
+            <label for="destination">Select Destination</label>
+            <div class="input-box">
+                <span class="icon">🌍</span>
+                <select id="destination" required>
+                    <option value="">Choose Destination</option>
+                    <option value="bali">Bali</option>
+                    <option value="paris">Paris</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="korea">Korea Selatan</option>
+                    <option value="swiss">Swiss</option>
+                    <option value="turki">Turki</option>
+                </select>
             </div>
+            <span class="error-message">Please select a destination</span>
+        </div>
 
-            <button type="submit">Book Now</button>
-        </form>
-    </div>
+        <button type="submit">SEND</button>
+    </form>
 </aside>
+</div>
+
+<!-- Our Package -->
+<section class="packages">
+    <h2>Our Packages</h2>
+    <div class="package-container">
+        <div class="package">
+            <img src="assets/bali2.jpg" alt="Bali">
+            <h3>Bali</h3>
+            <p>Nikmati keindahan pantai dan budaya khas Bali yang memukau.</p>
+        </div>
+        <div class="package">
+            <img src="assets/tokyo.jpg" alt="Tokyo">
+            <h3>Tokyo</h3>
+            <p>Jelajahi kota futuristik Tokyo dengan teknologi dan budaya uniknya.</p>
+        </div>
+        <div class="package">
+            <img src="assets/paris.jpg" alt="Paris">
+            <h3>Paris</h3>
+            <p>Rasakan romantisme kota Paris dengan Eiffel Tower dan kuliner khasnya.</p>
+        </div>
+        <div class="package">
+        <img src="assets/korea.jpg" alt="Korea Selatan">
+            <h3>Korea Selatan</h3>
+            <p>Jelajahi pesona K-Drama, K-Pop, dan wisata modern di Korea Selatan.</p>
+        </div>
+        <div class="package">
+        <img src="assets/swiss.jpeg" alt="Swiss">
+            <h3>Swiss</h3>
+            <p>Rasakan keindahan alam Pegunungan Alpen yang menakjubkan.</p>
+        </div>
+        <div class="package">
+            <img src="assets/turki.jpg" alt="Turki">
+            <h3>Turki</h3>
+            <p>Jelajahi perpaduan budaya Timur dan Barat di Turki.</p>
+        </div>
+        </div>
+    </section>
+
+<!-- SECTION: Call to Action -->
+<section class="cta">
+    <h2>It's Time to Relax</h2>
+    <p>Silakan isi form di bawah untuk memesan paket perjalanan impian Anda.</p>
+    <a href="#form-container" class="cta-button">Book Now</a>
+    </section>
 </body>
 </html>

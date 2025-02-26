@@ -1,15 +1,3 @@
-// Ini adalah select di navbar
-function togglePackages() {
-    let packagesSelect = document.getElementById("packagesSelect");
-
-    // Toggle visibility
-    if (packagesSelect.style.display === "none" || packagesSelect.style.display === "") {
-        packagesSelect.style.display = "block";
-    } else {
-        packagesSelect.style.display = "none";
-    }
-}
-
 // banner slide
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -79,4 +67,33 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// destination click
+document.addEventListener("DOMContentLoaded", function () {
+    function smoothScroll(targetClass) {
+        const targetElement = document.querySelector(targetClass);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 50, // Sesuaikan dengan tinggi navbar
+                behavior: "smooth"
+            });
+        }
+    }
+
+    // Call Us (ke Contact Us / Form Contact)
+    document.querySelector(".call").addEventListener("click", function () {
+        smoothScroll(".form-container");
+    });
+
+    // Call to Action (CTA Button ke Form Booking)
+    const ctaButton = document.getElementById("cta-button");
+    if (ctaButton) {
+        ctaButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            smoothScroll(".form-container");
+        });
+    }
+});
+
+
 
